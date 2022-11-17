@@ -1,0 +1,74 @@
+﻿@model test002.Models.candidats
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>candidats</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prénom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prénom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Téléphone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Téléphone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.niveau)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.niveau)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Expr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Expr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dernier_emp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dernier_emp)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.matricule }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

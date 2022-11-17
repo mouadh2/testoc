@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "View1";
+}
+
+<h2>View1</h2>
+<body>
+    <div class="inputbox">
+        <form>
+            <span for="fname">Nom</span><br>
+            <input type="text" id="fname" required="required"><br>
+            <span>Prénom</span><br>
+            <input type="text" id="lname" required="required"><br>
+            <span>Mail</span><br>
+            <input type="email" id="mail" required="required"><br>
+            <span>Téléphone</span><br>
+            <input type="tel" id="tel" required="required"><br>
+            <span>Niveau d'étude</span><br>
+            <select name="ne" id="ne">
+                <option value="BAC2">BAC+2</option>
+                <option value="BAC3">BAC+3</option>
+                <option value="BAC5">BAC+5</option>
+            </select><br>
+            <span>Nombres d'années d'expérience</span><br>
+            <input type="number" min="0" id="nb" required="required"><br>
+            <span>Dernier employeur</span><br>
+            <input type="text" id="de" required="required"><br>
+            <br>
+            <input type="file" name="upload" accept="application/pdf, image/*" />
+        </form>
+    </div>
+</body>
+
